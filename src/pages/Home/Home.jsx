@@ -5,7 +5,7 @@ import About from "../../components/About/About";
 import ServicesList from "../../components/ServiceList/ServiceList";
 import Contact from "../../components/Contact/Contact";
 import Footer from "../../components/Footer/Footer";
-import "./Homepage.css";
+import "./HomePage.css";
 
 const Homepage = () => {
   return (
@@ -16,7 +16,10 @@ const Homepage = () => {
           name="description"
           content="Westampton Solutions Limited provides innovative business solutions and strategic consultancy for organizations across Kenya and Sub-Saharan Africa."
         />
-        <meta name="keywords" content="Westampton Solutions, Business Solutions, Consulting, Technology, Kenya" />
+        <meta
+          name="keywords"
+          content="Westampton Solutions, Business Solutions, Consulting, Technology, Kenya"
+        />
       </Helmet>
 
       <main>
@@ -38,8 +41,6 @@ const Homepage = () => {
           <Contact />
         </section>
       </main>
-
-     
     </>
   );
 };
