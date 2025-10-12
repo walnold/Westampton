@@ -35,11 +35,10 @@
 //   );
 // }
 
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import logo from "../../assets/Icon_logo.png";
+import logo from "../../assets/icon_logo.png";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -89,7 +88,9 @@ const Navbar = () => {
               animate="visible"
               variants={linkVariants}
             >
-              <Link to={`/${name.toLowerCase().replace(" ", "-")}`}>{name}</Link>
+              <Link to={`/${name.toLowerCase().replace(" ", "-")}`}>
+                {name}
+              </Link>
             </motion.div>
           ))}
 
