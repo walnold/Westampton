@@ -1,0 +1,91 @@
+:root {
+  --primary-green: #1b7f4c;
+  --dark-green: #155c38;
+  --light-green: #e7f6ed;
+  --text-dark: #1a1a1a;
+  --text-light: #f9f9f9;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  /* background: linear-gradient(to right, var(--dark-green), var(--primary-green)); */
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.02));
+  color: var(--text-light);
+  text-align: center;
+  padding: 6rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.cta-btn {
+  background-color: var(--text-light);
+  color: var(--dark-green);
+  padding: 0.9rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: var(--light-green);
+  color: var(--primary-green);
+}
+
+/* ===== Homepage Section ===== */
+.homepage-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  color: var(--text-dark);
+}
+
+/* ===== Values Section ===== */
+.values-section {
+  background-color: var(--light-green);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.values-section h2 {
+  font-size: 2rem;
+  color: var(--dark-green);
+  margin-bottom: 2rem;
+}
+
+/* ===== Responsiveness ===== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    padding: 0.8rem 1.6rem;
+  }
+
+  .homepage-section,
+  .values-section {
+    padding: 2.5rem 1rem;
+  }
+}

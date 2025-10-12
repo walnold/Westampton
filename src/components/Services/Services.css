@@ -1,0 +1,5 @@
+.container-section{ padding:3.5rem 0; }
+.services-grid{ display:grid; gap:1.2rem; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); margin-top:1rem; }
+.service-card{ background:var(--card); padding:1.2rem; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.06); }
+.service-card h3{ color:var(--primary); margin-bottom:.6rem; }
+.learn-more{ color:var(--primary); font-weight:600; text-decoration:none; }

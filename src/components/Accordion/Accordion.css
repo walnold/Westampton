@@ -1,0 +1,43 @@
+:root {
+  --primary: #1b5e20;
+  --accent: #66bb6a;
+  --muted: #f7f9f7;
+}
+
+.accordion { width:100%; max-width:900px; margin:0 auto; }
+.accordion-item { background: #fff; border-radius: 10px; margin-bottom: 0.75rem; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.04); }
+
+/* header */
+.accordion-header {
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:1rem;
+  padding: 1rem 1.1rem;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  text-align:left;
+  font-weight:600;
+  cursor:pointer;
+  font-size:1rem;
+}
+.accordion-header.open { background: #16521a; }
+
+.accordion-icon { font-size:1.2rem; line-height:1; }
+
+/* body */
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s ease;
+  background: #f3fbf4;
+}
+.accordion-body-inner { padding: 1rem 1.1rem; color: #14421a; line-height:1.6; }
+
+/* small screens */
+@media (max-width: 640px) {
+  .accordion-header { font-size: 0.95rem; padding: .85rem; }
+  .accordion-body-inner { padding: .85rem; font-size: .95rem; }
+}
