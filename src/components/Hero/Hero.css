@@ -1,6 +1,6 @@
 .hero {
   padding: 4rem 0;
-  background:  linear-gradient(180deg, rgba(0, 0, 0, 0.02));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.02));
 }
 
 .hero-grid {
@@ -38,5 +38,6 @@
   .hero-left .btn {
     margin: auto;
     display: inline-block;
+    margin-bottom: 0.75rem;
   }
 }

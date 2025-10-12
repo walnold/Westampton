@@ -26,7 +26,7 @@ export default function Hero() {
             <a
               href="/contact"
               className="btn btn-outline"
-              style={{ marginLeft: ".75rem" }}
+              style={{ marginLeft: ".75rem" , marginBottom: ".75rem" }}
             >
               Talk to Our Advisory Team
             </a>
