@@ -373,4 +373,9 @@
     position: relative;
     box-shadow: none;
   }
+
+  .navbar.scrolled .nav-links a,
+  .navbar.scrolled .dropdown > span {
+    color: #000000;
+  }
 }
