@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { services } from "../Services/Services.data";
 import "./ServiceList.css";
 
@@ -8,7 +8,10 @@ export default function ServiceList() {
     <section className="services-section">
       <div className="container">
         <h2>Our Core Services</h2>
-        <p className="services-sub">We deliver strategic advisory and operational execution that empower organisations to thrive in the digital economy.</p>
+        <p className="services-sub">
+          We deliver strategic advisory and operational execution that empower
+          organisations to thrive in the digital economy.
+        </p>
 
         <div className="services-grid">
           {services.map((s, i) => (
@@ -23,7 +26,9 @@ export default function ServiceList() {
             >
               <h3>{s.title}</h3>
               <p>{s.description}</p>
-              <a className="service-cta" href="/contact">Contact us →</a>
+              <a className="service-cta" href="/contact">
+                Contact us →
+              </a>
             </motion.article>
           ))}
         </div>

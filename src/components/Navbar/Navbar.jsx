@@ -80,22 +80,24 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
-          {["Home", "About", "Our Approach", "Contact"].map((name, i) => (
-            <motion.div
-              key={name}
-              custom={i}
-              initial="hidden"
-              animate="visible"
-              variants={linkVariants}
-            >
-              <Link to={`/${name.toLowerCase().replace(" ", "-")}`}>
-                {name}
-              </Link>
-            </motion.div>
-          ))}
+          {["Home", "About", "Our Approach", "Contact", "Services"].map(
+            (name, i) => (
+              <motion.div
+                key={name}
+                custom={i}
+                initial="hidden"
+                animate="visible"
+                variants={linkVariants}
+              >
+                <Link to={`/${name.toLowerCase().replace(" ", "-")}`}>
+                  {name}
+                </Link>
+              </motion.div>
+            )
+          )}
 
           {/* Dropdown Section */}
-          <motion.div
+          {/* <motion.div
             className="dropdown"
             custom={4}
             initial="hidden"
@@ -109,7 +111,7 @@ const Navbar = () => {
               <a href="/services#market-entry">Market Entry Advisory</a>
               <a href="/services#staff-augmentation">Staff Augmentation</a>
             </div>
-          </motion.div>
+          </motion.div> */}
         </nav>
 
         {/* Mobile Toggle */}

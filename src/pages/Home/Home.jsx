@@ -1,10 +1,10 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 import Hero from "../../components/Hero/Hero";
 import About from "../../components/About/About";
 import ServicesList from "../../components/ServiceList/ServiceList";
 import Contact from "../../components/Contact/Contact";
-import Footer from "../../components/Footer/Footer";
+
 import "./HomePage.css";
 
 const Homepage = () => {

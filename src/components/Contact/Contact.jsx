@@ -5,13 +5,7 @@ import { Helmet } from "react-helmet-async";
 const Contact = () => {
   return (
     <>
-      <Helmet>
-        <title>Contact Us | Westampton Solutions Limited</title>
-        <meta
-          name="description"
-          content="Reach out to Westampton Solutions Limited for business inquiries, collaborations, or service consultations. We’d love to hear from you!"
-        />
-      </Helmet>
+      
 
       <section id="contact" className="contact-section">
         <div className="container">

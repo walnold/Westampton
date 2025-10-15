@@ -1,0 +1,151 @@
+:root {
+  --green: #1b8a5a;
+  --dark: #0e2f1f;
+  --light: #f8f9f9;
+  --text: #333;
+}
+
+.approach-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.8)),
+    url("../../assets/hero-image.jpg") center/cover no-repeat;
+  color: white;
+  padding: 10rem 2rem 8rem;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background: var(--green);
+  color: white;
+  padding: 0.9rem 1.6rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #157347;
+}
+
+.btn-secondary {
+  border: 2px solid var(--green);
+  color: var(--green);
+  padding: 0.9rem 1.6rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background: var(--green);
+  color: white;
+}
+
+.approach-section {
+  padding: 6rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--text);
+}
+
+.light-bg {
+  background: var(--light);
+}
+
+.framework-grid,
+.principles-grid {
+  display: grid;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.framework-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.framework-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.principles-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.principle-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.principle-card .icon {
+  font-size: 2rem;
+  color: var(--green);
+  margin-bottom: 0.5rem;
+}
+
+.differentiators {
+  list-style: none;
+  text-align: left;
+  max-width: 800px;
+  margin: 2rem auto;
+  line-height: 1.8;
+}
+
+.approach-cta {
+  background: var(--green);
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+.center-btn {
+  margin-top: 3rem;
+  margin-bottom: .5rem;
+}
+
+.approach-cta .btn-secondary {
+  border-color: white;
+  color: white;
+}
+
+.approach-cta .btn-secondary:hover {
+  background: white;
+  color: var(--green);
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.1rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .framework-card,
+  .principle-card {
+    padding: 1rem;
+  }
+}

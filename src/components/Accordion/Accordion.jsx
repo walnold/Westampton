@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Accordion.css";
+import { motion } from "framer-motion";
 
 /**
  * Props:
@@ -13,14 +14,22 @@ export default function Accordion({ accordionData = [] }) {
   return (
     <div className="accordion">
       {accordionData.map((item, i) => (
-        <div className="accordion-item" key={i}>
+        <motion.div
+          initial={{ opacity: 0, y: -1 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 * i, duration: 0.2 }}
+          className="accordion-item"
+          key={i}
+        >
           <button
             className={`accordion-header ${openIndex === i ? "open" : ""}`}
             onClick={() => toggle(i)}
             aria-expanded={openIndex === i}
           >
             <span>{item.header}</span>
-            <span className="accordion-icon">{openIndex === i ? "−" : "+"}</span>
+            <span className="accordion-icon">
+              {openIndex === i ? "−" : "+"}
+            </span>
           </button>
 
           <div
@@ -30,7 +39,7 @@ export default function Accordion({ accordionData = [] }) {
           >
             <div className="accordion-body-inner">{item.content}</div>
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   );

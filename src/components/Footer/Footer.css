@@ -1,5 +1,6 @@
 .footer {
-  background: #0d1b12;
+  /* background: #0d1b12; */
+  background: rgba(27, 138, 90, 0.95);
   color: #f1f1f1;
   padding: 3rem 1rem 1rem;
   position: relative;
