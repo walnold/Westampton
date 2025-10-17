@@ -49,16 +49,16 @@ const Footer = () => {
           <h4>Our Services</h4>
           <ul>
             <li>
-              <a href="/services#dfs">Digital Financial Services</a>
+              <a href="/services">Digital Financial Services</a>
             </li>
             <li>
-              <a href="/services#risk-advisory">IT & Cybersecurity Risk</a>
+              <a href="/services">IT & Cybersecurity Risk</a>
             </li>
             <li>
-              <a href="/services#market-entry">Market Entry Advisory</a>
+              <a href="/services">Market Entry Advisory</a>
             </li>
             <li>
-              <a href="/services#staff-augmentation">Staff Augmentation</a>
+              <a href="/services">Staff Augmentation</a>
             </li>
           </ul>
         </div>
