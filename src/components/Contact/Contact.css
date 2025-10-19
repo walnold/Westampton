@@ -91,6 +91,12 @@
 }
 
 /* Responsive */
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding-top: 7rem;
+  }
+}
 @media (min-width: 768px) {
   .contact-grid {
     grid-template-columns: 1fr 1fr;

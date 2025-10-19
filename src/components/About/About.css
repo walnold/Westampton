@@ -89,4 +89,8 @@ h2 {
   .btn {
     margin-bottom: 0.75rem;
   }
+
+  .about-hero {
+    padding-top: 6rem;
+  }
 }
